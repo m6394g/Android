@@ -1,0 +1,227 @@
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 
+    xmlns:tools="http://schemas.android.com/tools"
+ 
+    android:id="@+id/LinearLayout1"
+ 
+    android:layout_width="match_parent"
+ 
+    android:layout_height="fill_parent"
+    
+    android:layout_marginLeft="10dp"
+ 
+    android:orientation="vertical" >
+ 
+ 
+ 
+ 
+ 
+    <LinearLayout
+ 
+        android:layout_width="wrap_content"
+ 
+        android:layout_height="wrap_content"
+ 
+        android:layout_marginTop="20dp"
+        
+        android:layout_marginLeft="10dp" >
+ 
+ 
+ 
+        <TextView
+ 
+            android:id="@+id/tv_room"
+ 
+            android:layout_width="50dp"
+ 
+            android:layout_height="wrap_content"
+ 
+            android:text="Room_Name"
+ 
+            android:textColor="#000" />
+ 
+ 
+ 
+          <TextView
+ 
+            android:id="@+id/tv_wname"
+ 
+            android:layout_width="100dp"
+ 
+            android:layout_height="wrap_content"
+ 
+            android:layout_marginLeft="10dp"
+ 
+            android:text="Wifi_Name"
+ 
+            android:textColor="#000" />
+ 
+ 
+ 
+        <TextView
+ 
+            android:id="@+id/tv_strength"
+ 
+            android:layout_width="match_parent"
+ 
+            android:layout_height="wrap_content"
+ 
+            android:layout_marginLeft="10dp"
+ 
+            android:text="Wifi_Strength"
+ 
+            android:textColor="#000" /> 
+ 
+    </LinearLayout>
+ 
+ 
+ 
+      <ListView
+ 
+        android:id="@+id/lv_custom_list"
+ 
+        android:layout_width="match_parent"
+ 
+        android:layout_height="wrap_content"
+ 
+        android:layout_marginTop="10dp" >
+ 
+    </ListView> 
+ 
+ 
+ 
+</LinearLayout>
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/andro"
+    tools:context=".Database" >
+
+     <EditText
+         android:background="@drawable/oval"
+         android:id="@+id/editText2"
+         android:layout_width="72dp"
+         android:layout_height="wrap_content"
+         android:hint="@string/Room_Number"
+         android:layout_alignBottom="@+id/button4"
+         android:layout_toLeftOf="@+id/button4"
+          >
+
+         <requestFocus />
+     </EditText>
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="40dp"
+         android:layout_toRightOf="@+id/editText2"
+         android:text="@string/hello_world" />
+
+     <Button
+         android:id="@+id/button4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/textView1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="26dp"
+         android:onClick="add"
+         android:text="@string/Button4" />
+
+        <TextView
+            android:id="@+id/PRICEinitialvaluetextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PRICEseekBarID"
+            android:text="Low" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/PRICEtextViewProgressID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="150dp"
+            android:text="Temperature"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <SeekBar
+            android:id="@+id/PRICEseekBarID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button4"
+            android:layout_below="@+id/PRICEtextViewProgressID"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="19dp"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/PRICEinitialvaluetextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PRICEseekBarID"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="High" />
+        
+        <TextView
+            android:id="@+id/PRICEinitialvaluetextID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PRICEseekBarID1"
+            android:text="Dim" >
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/PRICEseekBarID1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button4"
+            android:layout_below="@+id/PRICEtextViewProgressID1"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="25dp"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/PRICEinitialvaluetextID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PRICEseekBarID1"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Bright" />
+
+        <TextView
+            android:id="@+id/PRICEtextViewProgressID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/PRICEtextViewProgressID"
+            android:layout_below="@+id/PRICEinitialvaluetextID"
+            android:layout_marginTop="31dp"
+            android:text="Light"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+         <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PRICEinitialvaluetextID1"
+            android:layout_marginTop="46dp"
+            android:layout_toRightOf="@+id/editText2"
+            android:onClick="submit"
+            android:text="@string/Button5" />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+/*WIFI Signal Strength Detector*\
+
+There are three code in this folder.
+
+1) Linux Python Code:- 
+-->First enable your system wifi. 
+-->Now install the "python" package in your system.
+-->Type the command "python getsignal_linux.py" in terminal.It will prompt you to enter password for super user permission.
+-->After following above command, automatically "result.txt" file will generate in current folder which contains info of Signals and its strength.  
+
+2) Windows Python Code:- 
+-->First enable your system wifi. 
+-->Now install the "python" package in your system.
+-->Type the command "python getsignal_windows.py" in command line.
+-->After following above command, automatically "result.txt" file will generate in current folder which contains info of Signal and its strength.
+
+3) Android App:-
+-->There is file name "wifidetect.apk" in the android folder.
+-->Install this .apk file in android phone having "4.2 version of jellybean OS".
+-->You can also install this app in different OS of android by doing slight changes in the code. Code is also attached with this folder.
+-->After installing the app, make sure that you wifi is enable.
+-->Now run your app and you will see, it will pop up the various wifi signal and their strength which the device detecting. 

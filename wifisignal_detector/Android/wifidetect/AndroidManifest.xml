@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wifidetect"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.wifidetect.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.Database"
+            android:label="@string/title_activity_database" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.Train"
+            android:label="@string/title_activity_train" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.Locate"
+            android:label="@string/title_activity_locate" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.ListWifiActivity"
+            android:label="@string/title_activity_list_wifi" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.Database_Locate"
+            android:label="@string/title_activity_database__locate" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.ListWifiActivity_Locate"
+            android:label="@string/title_activity_list_wifi_activity__locate" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.Filters"
+            android:label="@string/title_activity_filters" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.TabSwipe"
+            android:label="@string/title_activity_tab_swipe" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.FirstFragment"
+            android:label="@string/title_activity_first_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.SecondFragment"
+            android:label="@string/title_activity_second_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.wifidetect.ThirdFragment"
+            android:label="@string/title_activity_third_fragment" >
+        </activity>
+    </application>
+
+</manifest>

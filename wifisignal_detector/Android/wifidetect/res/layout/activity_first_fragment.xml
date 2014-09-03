@@ -1,0 +1,183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/gray"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    
+    android:gravity="center_horizontal"
+    tools:context=".Database" >
+
+     <EditText
+         android:background="@drawable/oval"
+         android:id="@+id/editText2"
+         android:layout_width="150dp"
+         android:layout_height="65dp"
+         android:layout_marginTop="50dp"
+         android:layout_marginLeft="60dp"
+         android:hint="@string/Room_Number"
+         android:ems="10" >
+
+         <requestFocus />
+     </EditText>
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/hello_world" 
+         style="@style/textView1"
+         android:layout_marginLeft="125dp"/>
+
+     <Button
+         android:background="@drawable/blue_button"
+         android:id="@+id/button4"
+         android:layout_width="200dp"
+         android:layout_height="70dp"
+         
+         android:text="@string/Button4"
+         style="@style/button_text4"
+         android:textSize="23dp"
+         android:layout_marginTop="50dp" 
+         android:layout_marginLeft="220dp"/>
+
+        <TextView
+            android:id="@+id/PRICEinitialvaluetextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="Low"
+            style="@style/PRICEinitialvaluetextID"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="60dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/PRICEinitialvaluetextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="High"
+            style="@style/PRICEinitialvaluetextID"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="365dp" />
+        
+       <!-- <TextView
+            android:id="@+id/PRICEinitialvaluetextID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PRICEseekBarID1"
+            android:text="Dim" >
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/PRICEseekBarID1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button4"
+            android:layout_below="@+id/PRICEtextViewProgressID1"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="25dp"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/PRICEinitialvaluetextID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PRICEseekBarID1"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Bright" />
+
+        <TextView
+            android:id="@+id/PRICEtextViewProgressID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/PRICEtextViewProgressID"
+            android:layout_below="@+id/PRICEinitialvaluetextID"
+            android:layout_marginTop="31dp"
+            android:text="Light"
+            android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+
+		<TextView
+            android:id="@+id/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="Light"
+            style="@style/PRICEinitialvaluetextID"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="20dp"
+             />
+
+         <ToggleButton
+             android:id="@+id/toggleButton1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             
+             android:background="@drawable/bgtoggle"
+             android:button="@null"
+             android:layout_marginTop="350dp" />
+         
+         <TextView
+            android:id="@+id/fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="Fan"
+            style="@style/PRICEinitialvaluetextID"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="360dp"
+             />
+         
+         <ToggleButton
+             android:id="@+id/toggleButton2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             
+             android:background="@drawable/bgtoggle1"
+             android:button="@null"
+             android:layout_marginTop="390dp"
+             android:layout_marginLeft="340dp" />
+
+         <TextView
+             android:id="@+id/PRICEtextViewProgressID"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             
+             android:text="Temperature"
+             style="@style/PRICEinitialvaluetextID"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:layout_marginTop="170dp"
+             android:layout_marginLeft="160dp" />
+
+         <SeekBar
+             android:id="@+id/PRICEseekBarID"
+             android:layout_width="350dp"
+             android:layout_height="35dp"
+             
+            
+             android:max="100"
+             android:layout_marginTop="190dp"
+             android:layout_marginLeft="60dp" />
+
+         <Button
+             android:id="@+id/button5"
+             
+             android:layout_width="150dp"
+             android:layout_height="70dp"
+             
+             android:background="@drawable/blue_button"
+             android:text="@string/Button5"
+             style="@style/button_text5"
+             android:layout_marginTop="525dp"
+             android:layout_marginLeft="140dp" />
+
+</RelativeLayout>
+</ScrollView>
